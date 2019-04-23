@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
   <link rel="stylesheet" href="labinocle.css">
 
   <title>La Binocle!</title>
@@ -87,7 +88,7 @@
       <div class="">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Se connecter</a>
+            <a id="login" class="nav-link text-light" href="#">Se connecter</a>
           </li>
           <li class="nav-item">
             <a id="register" class="nav-link text-light" href="#">S'inscrire</a>
@@ -392,18 +393,19 @@
 
   <div id="register_form">
 
-    <form>
+    <form id="register1">
 
-      <fieldset id="name1">
-        <!-- Début du premier formulaire -->
 
-        <legend id="legend1" class="text-center"><br />Créer un compte</legend>
-        <p id="formInfo">* champs obligatoires<br /><br /></p>
+      <fieldset>
+
+
+        <legend id="legend1" class="text-center text-white"><br />Créer un compte</legend>
+        <p id="formInfo" class="text-white">* champs obligatoires<br /><br /></p> <button id="cancel" type="button" class="btn btn-danger">Retour</button><br /><br />
         <ul>
 
-          <label for="Identity" class="larger"><strong>1. Identité</strong></label><br /><br />
+          <label for="Identity" class="larger text-white"><strong>1. Identité</strong></label><br /><br />
 
-          <li><label>Civilité : </label> <select name="Civilité" id="Civilité">
+          <li class="text-white"><label class="text-white">Civilité : </label> <select name="Civilité" id="Civilité">
               <option value="Madame">Madame</option>
               <option value="Monsieur">Monsieur</option>
 
@@ -411,29 +413,29 @@
             </select>
           </li>
 
-          <li>Nom* : <input id="lastName" type="text" name="Nom" placeholder="Nom" required /></li>
+          <li class="text-white">Nom* : <input id="lastName" type="text" name="Nom" placeholder="Nom" required /></li>
 
-          <li>Prénom* : <input id="firstName" type="text" name="Prénom" placeholder="Prénom" required /></li>
+          <li class="text-white">Prénom* : <input id="firstName" type="text" name="Prénom" placeholder="Prénom" required /></li>
 
-          <li><label for="choice">Date de naissance* : </label> <input type="date" id="date" placeholder="xx/xx/xxxx" required /></li>
+          <li class="text-white"><label for="choice" class="text-white">Date de naissance* : </label> <input type="date" id="date" placeholder="xx/xx/xxxx" required /></li>
 
-          <li><label for="phone">Numéro de téléphone* : +33</label><input type="tel" id="phone" placeholder="ex : 6xxxxxxxx" required /></li>
+          <li class="text-white"><label for="phone" class="text-white">Numéro de téléphone* : +33</label><input type="tel" id="phone" placeholder="ex : 6xxxxxxxx" required /></li>
 
-          <li><label for="phone">Votre adresse mail* : </label> <input type="email" id="mail" placeholder="Adresse mail" required /></li>
+          <li class="text-white"><label for="phone" class="text-white">Votre adresse mail* : </label> <input type="email" id="mail" placeholder="Adresse mail" required /></li>
 
-          <li><label for="phone">Société : </label> <input type="text" id="cie" placeholder="Entreprise" /></li><br />
+          <li class="text-white"><label for="phone" class="text-white">Société : </label> <input type="text" id="cie" placeholder="Entreprise" /></li><br />
 
-          <label for="address" class="larger"><strong>2. Adresse*</strong></label><br /><br />
+          <label for="address" class="larger text-white"><strong>2. Adresse*</strong></label><br /><br />
 
-          <li><input id="streetNumber" type="number" name="Number" placeholder="N° de la rue" required />
+          <li class="text-white"><input id="streetNumber" type="number" name="Number" placeholder="N° de la rue" required />
             <input id="street" type="text" name="Street" placeholder="Nom de la rue" required />
           </li>
 
-          <li><input id="CP" type="tel" name="CP" placeholder="Code postal... ex : 75000" pattern="[0-9]{5}" required /></li>
+          <li class="text-white"><input id="CP" type="tel" name="CP" placeholder="Code postal... ex : 75000" pattern="[0-9]{5}" required /></li>
 
-          <li><input type="text" name="City" placeholder="Ville" required /></li>
+          <li class="text-white"><input type="text" name="City" placeholder="Ville" required /></li>
 
-          <li><label for="country" class="larger">Région : </label>
+          <li class="text-white"><label for="country" class="larger text-white">Région : </label>
             <select name="country" id="country">
               <optgroup label="Nord-Ouest">Nord-Ouest</option>
                 <option value="Normandie">Normandie</option>
@@ -465,22 +467,22 @@
           </li><br />
 
 
-          <label for="Login" class="larger"><strong>3. Login*</strong></label><br /><br />
-          <li>Choix d'un identifiant : <input id="login" type="text" name="Login" placeholder="Votre pseudo" required /></li>
+          <label for="Login" class="larger text-white"><strong>3. Login*</strong></label><br /><br />
+          <li class="text-white">Choix d'un identifiant : <input id="login" type="text" name="Login" placeholder="Votre pseudo" required /></li>
 
-          <li>Mot de passe : <input id="password" type="password" name="Password1" title="8 caractères minimum" required />
+          <li class="text-white">Mot de passe : <input id="password" type="password" name="Password1" title="8 caractères minimum" required />
             Confirmation du mot de passe : <input id="confirmPassword" type="password" name="Password2" minlenght="8" required />
           </li>
-          <p id="passwordInfo">Entre 8 et 15 caractères, contenant au moins une minuscule et une majuscule, un chiffre et un caractère spécial.<br /><br /></p>
+          <p id="passwordInfo" class="text-white">Entre 8 et 15 caractères, contenant au moins une minuscule et une majuscule, un chiffre et un caractère spécial.<br /><br /></p>
 
           <button id="CBbutton" type="button" class="btn btn-primary">Enregistrer ma carte bancaire</button>
-          <p id="cbInfo">Seulement si vous souhaitez pré-enregistrer une carte par commodité.<br /><br /></p>
+          <p id="cbInfo" class="text-white">Seulement si vous souhaitez pré-enregistrer une carte par commodité.<br /><br /></p>
 
           <div id="registerCB">
 
-            <label for="Login" class="larger"><strong>4. Vos moyens de paiement</strong></label>
+            <label for="Login" class="larger text-white"><strong>4. Vos moyens de paiement</strong></label>
 
-            <li>Type de carte bancaire :
+            <li class="text-white">Type de carte bancaire :
 
               <input type="radio" id="VISA" name="Carte" value="VISA" />
               <img src="icons/Visa.png" alt="carte visa" width="5%" height="5%" title="Visa"></img>
@@ -496,8 +498,8 @@
               <img src="icons/discover.png" alt="Discover" width="5%" height="5%" title="Discover"></img>
             </li>
 
-            <li>Numéro de carte : <input id="cardNumber" type="text" placeholder="xxxxxxxxxxxx" title="Sans espace" required /></li>
-            <li>Date de validité :
+            <li class="text-white">Numéro de carte : <input id="cardNumber" type="text" placeholder="xxxxxxxxxxxx" title="Sans espace" required /></li>
+            <li class="text-white">Date de validité :
               <select name="months" id="months">
                 <option value="Janvier">01-Janvier</option>
                 <option value="Février">02-Février</option>
@@ -528,12 +530,12 @@
                 <option value="2030">2030</option>
               </select>
             </li>
-            <li>Code de sécurité : <input id="cryptoCB" type="text" placeholder="xxx" /></li>
+            <li class="text-white">Code de sécurité : <input id="cryptoCB" type="text" placeholder="xxx" /></li>
 
           </div>
 
         </ul>
-        <p id="formInfo"><br /><br />* champs obligatoires</p>
+        <p id="formInfo" class="text-white"><br /><br />* champs obligatoires</p>
 
         <div class="center-block">
           <button id="submitForm" type="button" class="btn btn-success">Valider mon inscription</button><br /><br />
@@ -549,7 +551,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   <script src="labinocle.js"></script>
+  <script src="login.js"></script>
 </body>
 
 </html>

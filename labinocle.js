@@ -1,11 +1,15 @@
 $("#register_form").hide();
 
+
+
 // Afficher le formulaire
 
 $("#register").click(function() {
   $("#headSite").hide();
   $("#bodyPage").hide();
   $("#register_form").show();
+
+
 
   // Déclaration des variables nécessaires aux regex du formulaire d'inscription
 
@@ -115,7 +119,7 @@ $("#register").click(function() {
       var firstName = $("#firstName").val();
       var mail = $("#mail").val();
 
-      alert("Bienvenue " + firstName + " ! La création de ton compte s'est déroulée sans encombre, et pour te le prouver, nous venons de t'envoyer un e-mail de confirmation à ton adresse " + mail + ". En te souhaitant une belle expérience sur notre site !");
+      swal.fire("Bienvenue " + firstName + " ! La création de ton compte s'est déroulée sans encombre, et pour te le prouver, nous venons de t'envoyer un e-mail de confirmation à ton adresse " + mail + ". En te souhaitant une belle expérience sur notre site !");
 
       $("#headSite").show();
       $("#bodyPage").show();
@@ -124,8 +128,4 @@ $("#register").click(function() {
 
   });
 
-
 }); // Fermeture du formulaire
-
-
-$("#bodyPage").show();

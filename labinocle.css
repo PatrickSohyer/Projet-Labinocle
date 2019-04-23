@@ -1,7 +1,11 @@
-/* CSS du formulaire d'inscription */
+#bandeau {
+  width: 100%;
+  height: auto;
+}
 
+/* CSS du formulaire d'inscription */
 #formInfo {
-  font-size : 0.75rem;
+  font-size: 0.75rem;
 }
 
 #passwordInfo {
@@ -14,5 +18,5 @@
 
 #submitForm {
   display: block;
-    margin : auto;
+  margin: auto;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="exercice7.css" />
+  <title>Site marchand</title>
+</head>
+
+<body>
+  <fieldset id="name1">
+    <legend id="name1">Votre identité</legend>
+
+    <ol>
+      <li>Nom : <input type="text" name="Nom" id="Nom" placeholder="Nom" /></li>
+      <li>Prénom : <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" /></li>
+      <li>Adresse mail : <input type="email" name="Adresse mail" id="Adresse mail" placeholder="Adresse mail" /></li>
+    </ol>
+  </fieldset>
+
+  <fieldset id="name2">
+    <legend id="name2">Adresse de livraison</legend>
+
+    <ol>
+      <li>Adresse : <textarea name="Adresse" id="Adresse" rows="5" cols="20"></textarea></li>
+      <li>Code postal : <input type="text" name="Code postal" id="Code postal" placeholder="Code postal" /></li>
+      <li>Ville : <input type="text" name="Ville" id="Ville" placeholder="Ville" /></li>
+    </ol>
+  </fieldset>
+
+  <fieldset id="name3">
+    <legend id="name3">Informations de réglement</legend>
+
+    <ol>
+      <li>Type de carte bancaire :</li>
+      <div>
+        <input type="radio" id="VISA" name="Carte" value="VISA" />
+        <label for="VISA">VISA</label>
+      </div>
+      <div>
+        <input type="radio" id="Mastercard" name="Carte" value="Mastercard" />
+        <label for="Mastercard">Mastercard</label>
+      </div>
+      <li>Numéro de carte : <input type="text" name="Numéro de carte" id="Numéro de carte" placeholder="Numéro de carte" /></li>
+      <li>Code de sécurité : <input type="text" name="Code de sécurité" id="Code de sécurité" placeholder="Code de sécurité" /></li>
+      <li>Nom du titulaire : <input type="text" name="Nom du titulaire" id="Nom du titulaire" placeholder="Nom du titulaire" /></li>
+    </ol>
+  </fieldset>
+
+  <input type="submit" value="J'achète"></input>
+
+
+</body>
+
+</html>

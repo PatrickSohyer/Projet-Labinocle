@@ -1,94 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8 /">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="labinocle.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8 /">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>La Binocle!</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="labinocle.css">
 
-  </head>
+  <title>La Binocle!</title>
 
-  <body>
+</head>
 
-<div id="head">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Toutes nos lunettes</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Homme
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Voir tout</a>
+  <div id="register_form">
+
+    <form>
+
+      <fieldset id="name1">
+        <!-- Début du premier formulaire -->
+
+        <legend id="legend1" class="text-center">Créer un compte</legend>
+        <p id="formInfo">* champs obligatoires<br /><br /></p>
+        <ul>
+
+          <label for="Identity" class="larger"><strong>1. Identité</strong></label><br /><br />
+
+          <li><label>Civilité : </label> <select name="Civilité" id="Civilité">
+              <option value="Madame">Madame</option>
+              <option value="Monsieur">Monsieur</option>
+
+
+            </select>
           </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Femme
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Voir tout</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Enfant
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Voir tout</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Solaire
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Voir tout</a>
-          </div>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <img src="shopping.svg" width="5%" height="5%"></img>
-    </div>
-  </nav>
 
-</div>
+          <li>Nom* : <input id="lastName" type="text" name="Nom" placeholder="Nom" required /></li>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="labinocle.js"></script>
-  </body>
+          <li>Prénom* : <input id="firstName" type="text" name="Prénom" placeholder="Prénom" required /></li>
+
+          <li><label for="choice">Date de naissance* : </label> <input type="date" id="date" placeholder="xx/xx/xxxx" required /></li>
+
+          <li><label for="phone">Numéro de téléphone* : +33</label><input type="tel" id="phone" placeholder="ex : 6xxxxxxxx" required /></li>
+
+          <li><label for="phone">Votre adresse mail* : </label> <input type="email" id="mail" placeholder="Adresse mail" required /></li>
+
+          <li><label for="phone">Société : </label> <input type="text" id="cie" placeholder="Entreprise" /></li><br />
+
+          <label for="address" class="larger"><strong>2. Adresse*</strong></label><br /><br />
+
+          <li><input id="streetNumber" type="number" name="Number" placeholder="N° de la rue" required />
+            <input id="street" type="text" name="Street" placeholder="Nom de la rue" required />
+          </li>
+
+          <li><input id="CP" type="tel" name="CP" placeholder="Code postal... ex : 75000" pattern="[0-9]{5}" required /></li>
+
+          <li><input type="text" name="City" placeholder="Ville" required /></li>
+
+          <li><label for="country" class="larger">Région : </label>
+            <select name="country" id="country">
+              <optgroup label="Nord-Ouest">Nord-Ouest</option>
+                <option value="Normandie">Normandie</option>
+                <option value="Bretagne">Bretagne</option>
+                <option value="Pays de la Loire">Pays de la Loire</option>
+              <optgroup label="Nord-Est">Nord-Est</option>
+                <option value="Hauts-de-France">Hauts-de-France</option>
+                <option value="Grand Est">Grand Est</option>
+                <option value="Île de France">Île de France</option>
+              <optgroup label="Centre">Centre</option>
+                <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+                <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+                <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+              <optgroup label="Sud-Ouest">Sud-Ouest</option>
+                <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+                <option value="Occitanie">Occitanie</option>
+                <option value="Andorre">Andorre</option>
+              <optgroup label="Sud-Est">Sud-Est</option>
+                <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Corse">Corse</option>
+              <optgroup label="Dom-Tom">Dom-Tom</option>
+                <option value="Guyane">Guyane</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Martinique">Martinique</option>
+                <option value="La Réunion">La Réunion</option>
+                <option value="Mayotte">Mayotte</option>
+            </select>
+          </li><br />
+
+
+          <label for="Login" class="larger"><strong>3. Login*</strong></label><br /><br />
+          <li>Choix d'un identifiant : <input id="login" type="text" name="Login" placeholder="Votre pseudo" required /></li>
+
+          <li>Mot de passe : <input id="password" type="password" name="Password1" title="8 caractères minimum" required />
+            Confirmation du mot de passe : <input id="confirmPassword" type="password" name="Password2" minlenght="8" required />
+          </li>
+          <p id="passwordInfo">Entre 8 et 15 caractères, contenant au moins une minuscule et une majuscule, un chiffre et un caractère spécial.<br /><br /></p>
+
+          <button id="CBbutton" type="button" class="btn btn-primary">Enregistrer ma carte bancaire</button>
+          <p id="cbInfo">Seulement si vous souhaitez pré-enregistrer une carte par commodité.<br /><br /></p>
+
+          <div id="registerCB">
+
+            <label for="Login" class="larger"><strong>4. Vos moyens de paiement</strong></label>
+
+            <li>Type de carte bancaire :
+
+              <input type="radio" id="VISA" name="Carte" value="VISA" />
+              <img src="icons/Visa.png" alt="carte visa" width="5%" height="5%" title="Visa"></img>
+              <input type="radio" id="Mastercard" name="Carte" value="Mastercard" />
+              <img src="icons/mastercard.png" alt="master card" width="5%" height="5%" title="Mastercard"></img>
+              <input type="radio" id="AmericanExpress" name="Carte" value="AmericanExpress" />
+              <img src="icons/americanExpress.png" alt="american express" width="5%" height="5%" title="American Express"></img>
+              <input type="radio" id="JCB" name="Carte" value="JCB" />
+              <img src="icons/jcb.png" alt="JCB" width="5%" height="5%" title="JCB"></img>
+              <input type="radio" id="DinersClub" name="Carte" value="DinersClub" />
+              <img src="icons/dinersClub.png" alt="Diner's Club" width="5%" height="5%" title="Diner's Club"></img>
+              <input type="radio" id="Discover" name="Carte" value="Discover" />
+              <img src="icons/discover.png" alt="Discover" width="5%" height="5%" title="Discover"></img>
+            </li>
+
+            <li>Numéro de carte : <input id="cardNumber" type="text" placeholder="xxxxxxxxxxxx" title="Sans espace" required /></li>
+            <li>Date de validité :
+              <select name="months" id="months">
+                <option value="Janvier">01-Janvier</option>
+                <option value="Février">02-Février</option>
+                <option value="Mars">03-Mars</option>
+                <option value="Avril">04-Avril</option>
+                <option value="Mai">05-Mai</option>
+                <option value="Juin">06-Juin</option>
+                <option value="Juillet">07-Juillet</option>
+                <option value="Août">08-Août</option>
+                <option value="Septembre">09-Septembre</option>
+                <option value="Octobre">10-Octobre</option>
+                <option value="Novembre">11-Novembre</option>
+                <option value="Décembre">12-Décembre</option>
+              </select>
+
+              <select name="year" id="year">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </li>
+            <li>Code de sécurité : <input id="cryptoCB" type="text" placeholder="xxx" /></li>
+
+          </div>
+
+        </ul>
+        <p id="formInfo"><br /><br />* champs obligatoires</p>
+
+        <div class="center-block">
+          <button id="submitForm" type="button" class="btn btn-success">Valider mon inscription</button>
+        </div>
+
+
+      </fieldset>
+
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="labinocle.js"></script>
+</body>
+
 </html>

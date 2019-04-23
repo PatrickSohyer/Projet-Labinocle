@@ -1,1 +1,131 @@
+$("#register_form").hide();
 
+// Afficher le formulaire
+
+$("#register").click(function() {
+  $("#headSite").hide();
+  $("#bodyPage").hide();
+  $("#register_form").show();
+
+  // Déclaration des variables nécessaires aux regex du formulaire d'inscription
+
+  var regexName = /^[a-zA-ZéèÉÈôîêûÛÊÔÎùÙïöëüËÏÖÜ']{2,15}[- ']?[a-zA-ZéèÉÈôîêûÛÊÔÎùÙïöëüËÏÖÜ]{0,15}$/;
+  var regexDate = /^([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))$/;
+  var regexPhone = /^[0-9]{9}$/;
+  var regexStreet = /^[a-zA-ZéèÉÈôîêûÛÊÔÎùÙïöëüËÏÖÜ' ]{2,15}[- ']?[a-zA-ZéèÉÈôîêûÛÊÔÎùÙïöëüËÏÖÜ ]{0,15}[a-zA-ZéèÉÈôîêûÛÊÔÎùÙïöëüËÏÖÜ ]{0,15}$/;
+  var regexStreetNumber = /^[0-9]+$/;
+  var regexPostal = /^[0-9]{5}|[9]{1}[7]{1}[1-6]{1}$/;
+  var regexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var regexPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_.])([-.+!*$@%_\w]{8,15})$/;
+  // Entre 8 et 15 caractères, au moins une minuscule et une majuscule, un chiffre et un caractère spécial
+  var regexCB = /^(?:[0-9]{12}|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}|\s)$/;
+  // Pour Visa, MasterCard, American Express, Diners Club, Discover, et JCB cards
+  var regexCryptoCB = /^[0-9]{3}$/;
+
+
+  $("#registerCB").hide();
+
+  // 1ère fonction : permet de vérifier la confirmation du mot de passe
+
+  $("#confirmPassword").focusout(function() {
+    var password = $("#password").val();
+    var confirmPassword = $("#confirmPassword").val();
+    if (password == "") {
+      $("#password").css("border", "solid 1px red");
+      $("#confirmPassword").css("border", "solid 1px red");
+      alert("Veuillez entrer votre mot de passe dans le premier champs !");
+    } else if (confirmPassword == "") {
+      $("#password").css("border", "solid 1px green");
+      $("#confirmPassword").css("border", "solid 1px red");
+      alert("Veuillez entrer votre mot de passe dans le second champs !");
+    } else if (password != confirmPassword) {
+      $("#confirmPassword").css("border", "solid 1px red");
+      alert("Confirmation du mot de passe invalide");
+    } else {
+      $("#password").css("border", "solid 1px green");
+      $("#confirmPassword").css("border", "solid 1px green");
+    }
+  });
+
+  // 2ème fonction : permet d'afficher l'enregistrement de la cb et sa vérification sur focusout
+
+  $("#CBbutton").click(function() {
+    $("#registerCB").show();
+  });
+
+  $("#cardNumber").focusout(function() {
+    if (!regexCB.test($("#cardNumber").val())) {
+      alert("Vous avez fait une erreur dans le numéro de la carte bancaire.")
+      $("#cardNumber").css("border", "solid red 1px");
+    }
+  });
+
+  $("#cryptoCB").focusout(function() {
+    if (!regexCryptoCB.test($("#cryptoCB").val())) {
+      alert("Vous avez fait une erreur dans le code de sécurité de la carte bancaire.")
+      $("#cryptoCB").css("border", "solid red 1px");
+    }
+  });
+
+  // Début des regex
+
+  $("#submitForm").click(function() {
+
+
+    var password = $("#password").val();
+    var confirmPassword = $("#confirmPassword").val();
+
+    if (!regexName.test($("#lastName").val())) {
+      alert("Vous avez fait une erreur dans le nom.");
+      $("#lastName").css("border", "solid red 1px");
+    } else if (!regexName.test($("#firstName").val())) {
+      alert("Vous avez fait une erreur dans le prénom.");
+      $("#firstName").css("border", "solid red 1px");
+    } else if (!regexDate.test($("#date").val())) {
+      alert("Vous avez fait une erreur dans la date de naissance.")
+      $("#date").css("border", "solid red 1px");
+    } else if (!regexPhone.test($("#phone").val())) {
+      alert("Vous avez fait une erreur dans le numéro de téléphone.")
+      $("#phone").css("border", "solid red 1px");
+    } else if (!regexMail.test($("#mail").val())) {
+      alert("Vous avez fait une erreur dans l'addresse e-mail.")
+      $("#mail").css("border", "solid red 1px");
+    } else if (!regexStreet.test($("#street").val())) {
+      alert("Vous avez fait une erreur dans le nom de la rue.")
+      $("#street").css("border", "solid red 1px");
+    } else if (!regexStreetNumber.test($("#streetNumber").val())) {
+      alert("Vous avez fait une erreur dans le numéro de la rue.")
+      $("#streetNumber").css("border", "solid red 1px");
+    } else if (!regexPostal.test($("#CP").val())) {
+      alert("Vous avez fait une erreur dans le code postal.")
+      $("#CP").css("border", "solid red 1px");
+    } else if (!regexPassword.test($("#password").val())) {
+      alert("Vous avez fait une erreur dans le mot de passe.")
+      $("#password").css("border", "solid red 1px");
+
+    }
+
+
+    // Confirmation de la bonne réception du formulaire
+    else {
+      $("#register_form").hide();
+      $("#submit").hide();
+
+      var lastName = $("#lastName").val();
+      var firstName = $("#firstName").val();
+      var mail = $("#mail").val();
+
+      alert("Bienvenue " + firstName + " ! La création de ton compte s'est déroulée sans encombre, et pour te le prouver, nous venons de t'envoyer un e-mail de confirmation à ton adresse " + mail + ". En te souhaitant une belle expérience sur notre site !");
+
+      $("#headSite").show();
+      $("#bodyPage").show();
+    }
+
+
+  });
+
+
+}); // Fermeture du formulaire
+
+
+$("#bodyPage").show();

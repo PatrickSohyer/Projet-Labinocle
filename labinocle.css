@@ -3,8 +3,19 @@
   height: auto;
 }
 
-/* .imgMen {
-  background: url("labinoclebg.png");
-  background-repeat: no-repeat;
-  text-align : center;
-} */
+#formInfo {
+  font-size: 0.75rem;
+}
+
+#passwordInfo {
+  font-size: 0.70rem;
+}
+
+#cbInfo {
+  font-size: 0.70rem;
+}
+
+#submitForm {
+  display: block;
+  margin: auto;
+}

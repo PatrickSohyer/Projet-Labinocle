@@ -1,4 +1,790 @@
+// Div cachées à l'ouverture de la page d'accueil
+
 $("#register_form").hide();
+// Lunettes homme
+$("#casseBonbon").hide();
+$("#croconette").hide();
+$("#damiolyte").hide();
+$("#laulauvision").hide();
+$("#reptilien").hide();
+// Lunettes femme
+$("#barbinocle").hide();
+$("#choupitromimi").hide();
+$("#flowerPink").hide();
+$("#margharita").hide();
+$("#myLittleBinocle").hide();
+// Lunettes enfant
+$("#emileLouisVuitton").hide();
+$("#opticBebe").hide();
+$("#miochefflelou").hide();
+$("#petitCornichon").hide();
+$("#pleureur").hide();
+// Lunettes solaires
+$("#CaPikLesYeux").hide();
+$("#eclypse").hide();
+$("#gigiMontagne").hide();
+$("#JyVoisQueDal").hide();
+$("#louisZieuton").hide();
+
+
+
+
+
+
+
+// Retour à l'accueil : afficher comme à l'ouverture de la page
+
+$("#home").click(function() {
+  $("#headSite").show();
+  $("#bodyPage").show();
+  $("#register_form").hide();
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+
+
+
+
+
+
+
+
+// Afficher toutes les lunettes
+
+$("#showAll").click(function() {
+  // $("#headSite").hide();
+  $("#bodyPage").hide();
+  // Lunettes homme
+  $("#casseBonbon").show();
+  $("#croconette").show();
+  $("#damiolyte").show();
+  $("#laulauvision").show();
+  $("#reptilien").show();
+  // Lunettes femme
+  $("#barbinocle").show();
+  $("#choupitromimi").show();
+  $("#flowerPink").show();
+  $("#margharita").show();
+  $("#myLittleBinocle").show();
+  // Lunettes enfant
+  $("#emileLouisVuitton").show();
+  $("#opticBebe").show();
+  $("#miochefflelou").show();
+  $("#petitCornichon").show();
+  $("#pleureur").show();
+  // Lunettes solaires
+  $("#CaPikLesYeux").show();
+  $("#eclypse").show();
+  $("#gigiMontagne").show();
+  $("#JyVoisQueDal").show();
+  $("#louisZieuton").show();
+});
+
+
+
+// Afficher les lunettes par catégorie
+
+$("#homme1").click(function() {
+  $("#bodyPage").hide();
+  $("#casseBonbon").show();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#homme2").click(function() {
+  $("#bodyPage").hide();
+  $("#croconette").show();
+  $("#casseBonbon").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#homme3").click(function() {
+  $("#bodyPage").hide();
+  $("#damiolyte").show();
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#homme4").click(function() {
+  $("#bodyPage").hide();
+  $("#laulauvision").show();
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#reptilien").hide();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#homme5").click(function() {
+  $("#bodyPage").hide();
+  $("#reptilien").show();
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+
+$("#homme6").click(function() {
+  $("#bodyPage").hide();
+  $("#casseBonbon").show();
+  $("#croconette").show();
+  $("#damiolyte").show();
+  $("#laulauvision").show();
+  $("#reptilien").show();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme1").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").show();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme2").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").hide();
+  $("#choupitromimi").show();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme3").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").show();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme4").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").show();
+  $("#myLittleBinocle").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme5").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#femme6").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").show();
+  $("#choupitromimi").show();
+  $("#flowerPink").show();
+  $("#margharita").show();
+  $("#myLittleBinocle").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant1").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").show();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant2").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").show();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant3").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").show();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant4").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").show();
+  $("#pleureur").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant5").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#enfant6").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").show();
+  $("#opticBebe").show();
+  $("#miochefflelou").show();
+  $("#petitCornichon").show();
+  $("#pleureur").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#solaire1").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").show();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+$("#solaire2").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").show();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+$("#solaire3").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").show();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+$("#solaire4").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").show();
+  $("#louisZieuton").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+$("#solaire5").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+$("#solaire6").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").show();
+  $("#eclypse").show();
+  $("#gigiMontagne").show();
+  $("#JyVoisQueDal").show();
+  $("#louisZieuton").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});
+
+
+
+
+
+
 
 
 
@@ -7,6 +793,32 @@ $("#register_form").hide();
 $("#register").click(function() {
   $("#headSite").hide();
   $("#bodyPage").hide();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+
   $("#register_form").show();
 
 

@@ -3,6 +3,26 @@
   height: auto;
 }
 
+#chatbinocle1, #chatbinocle2 {
+  border-radius: 10%;
+}
+
+
+/* CSS du formulaire d'inscription */
+#register_form {
+  background: URL(images/fondForm.jpeg) no-repeat;
+  background-size: cover;
+  font-family: 'Alice', serif;
+}
+
+#register1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cancel {
+  float: right;
+}
+
 #formInfo {
   font-size: 0.75rem;
 }

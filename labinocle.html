@@ -2,8 +2,8 @@
 <html lang="fr" dir="ltr">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8 /">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -15,7 +15,60 @@
   </head>
 
   <body>
-
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Panier</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body" id="cart">
+          <ul>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <p class="pay">Total : <span class="total">0.00</span>€</p>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button name="button" id="pay">Payer</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  <article class="lunette2019" data-price="99">
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="">
+        <span>99€00</span>
+      </div>
+      <div class="card-content">
+        <h1>Lunette homme</h1>
+        <p>Description du produit homme</p>
+        <div class="card-action row">
+          <a href="#" class="waves-effect waves-light btn red white-text col-sm-12">Ajouter au panier</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="lunette2019" data-price="200">
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="">
+        <span>200€00</span>
+      </div>
+      <div class="card-content">
+        <h1>Lunette Femme</h1>
+        <p>Description du produit femme</p>
+        <div class="card-action row">
+          <a href="#" class="waves-effect waves-light btn red white-text col-sm-12">Ajouter au panier</a>
+        </div>
+      </div>
+    </div>
+  </article>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

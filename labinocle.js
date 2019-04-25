@@ -69,9 +69,6 @@ $("#home").click(function() {
 
 
 
-
-
-
 // Afficher toutes les lunettes
 
 $("#showAll").click(function() {
@@ -938,6 +935,119 @@ $("#register").click(function() {
     }
 
 
+
+
   });
 
 }); // Fermeture du formulaire
+$("#modalsMarqueMen").click(function() {
+  $("#bodyPage").hide();
+  $("#casseBonbon").show();
+  $("#croconette").show();
+  $("#damiolyte").show();
+  $("#laulauvision").show();
+  $("#reptilien").show();
+
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#modalsMarqueWomen").click(function() {
+  $("#bodyPage").hide();
+  $("#barbinocle").show();
+  $("#choupitromimi").show();
+  $("#flowerPink").show();
+  $("#margharita").show();
+  $("#myLittleBinocle").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#modalsMarqueKids").click(function() {
+  $("#bodyPage").hide();
+  $("#emileLouisVuitton").show();
+  $("#opticBebe").show();
+  $("#miochefflelou").show();
+  $("#petitCornichon").show();
+  $("#pleureur").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes solaires
+  $("#CaPikLesYeux").hide();
+  $("#eclypse").hide();
+  $("#gigiMontagne").hide();
+  $("#JyVoisQueDal").hide();
+  $("#louisZieuton").hide();
+});
+
+$("#modalsMarqueSun").click(function() {
+  $("#bodyPage").hide();
+  $("#CaPikLesYeux").show();
+  $("#eclypse").show();
+  $("#gigiMontagne").show();
+  $("#JyVoisQueDal").show();
+  $("#louisZieuton").show();
+
+  // Lunettes homme
+  $("#casseBonbon").hide();
+  $("#croconette").hide();
+  $("#damiolyte").hide();
+  $("#laulauvision").hide();
+  $("#reptilien").hide();
+  // Lunettes femme
+  $("#barbinocle").hide();
+  $("#choupitromimi").hide();
+  $("#flowerPink").hide();
+  $("#margharita").hide();
+  $("#myLittleBinocle").hide();
+  // Lunettes enfant
+  $("#emileLouisVuitton").hide();
+  $("#opticBebe").hide();
+  $("#miochefflelou").hide();
+  $("#petitCornichon").hide();
+  $("#pleureur").hide();
+});

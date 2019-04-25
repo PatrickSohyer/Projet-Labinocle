@@ -1,140 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="labinocle.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
-  <link rel="stylesheet" href="labinocle.css">
+    <title>La Binocle!</title>
 
-  <title></title>
+  </head>
 
-</head>
-
-<body>
-  <div class="container-fluid casseBonbon" id="casseBonbon">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
-        <div class="casseBonbonMen1">
-          <article class="casseBonbon1" data-price="110">
-            <div class="card">
-              <div class="card-image">
-                <img id="lunettes1" src="images/homme/homme1.jpg" class="w-75" alt="">
-              </div>
-              <div class="card-content">
-                <p id="item1" class="h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
-                <p id="price1" class="h3 mt-2"><i>110,00€</i></p>
-                <div class="text-center mt-2">
-                  <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Description
-  </a></p>
-  <div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
-                  <button id="btn1" type="button" class="add btn btn-secondary mx-auto mb-2">Ajoutez au panier</button><input type="number" class="qty" value="1" min="1">
-                </div>
-              </div>
-          </article>
+  <body>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Panier</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body" id="cart">
+          <ul>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <p class="pay">Total : <span class="total">0.00</span>€</p>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button name="button" id="pay">Payer</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
-        <div class="casseBonbonMen2">
-          <article class="casseBonbon2" data-price="150">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/homme/homme2.jpg" class="w-75" alt="">
-              </div>
-              <div class="card-content">
-                <p class="item h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
-                <p class="price h3 mt-2"><i>150,00€</i></p>
-                <div class="text-center mt-2">
-                  <button id="btn2" type="button" class="add btn btn-secondary mx-auto mb-2">Ajoutez au panier</button><input type="number" class="qty" value="1" min="1">
-                </div>
-              </div>
-          </article>
-        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  <article class="lunette2019" data-price="99">
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="">
+        <span>99€00</span>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
-        <div class="casseBonbonMen3">
-          <article class="casseBonbon3" data-price="130">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/homme/homme3.jpg" class="w-75" alt="">
-              </div>
-              <div class="card-content">
-                <p class="item h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
-                <p class="price h3 mt-2"><i>130,00€</i></p>
-                <div class="text-center mt-2">
-                  <button type="button" class="add btn btn-secondary mx-auto mb-2">Ajoutez au panier</button><input type="number" class="qty" value="1" min="1">
-                </div>
-              </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
-        <div class="casseBonbonMen4">
-          <article class="casseBonbon4" data-price="125">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/homme/homme4.jpg" class="w-75" alt="">
-              </div>
-              <div class="card-content">
-                <p class="item h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
-                <p class="price h3 mt-2"><i>125,00€</i></p>
-                <div class="text-center mt-2">
-                  <button type="button" class="add btn btn-secondary mx-auto mb-2">Ajoutez au panier</button><input type="number" class="qty" value="1" min="1">
-                </div>
-              </div>
-          </article>
+      <div class="card-content">
+        <h1>Lunette homme</h1>
+        <p>Description du produit homme</p>
+        <div class="card-action row">
+          <a href="#" class="waves-effect waves-light btn red white-text col-sm-12">Ajouter au panier</a>
         </div>
       </div>
     </div>
-  </div>
-<div id="cart" class="row">
-  <ul>
-
-  </ul>
-  <span class="total">0.00</span>
-<button name="button" id="pay">Panier</button>
-</div>
-
-
-
-<div id="panier">
-<table class="table">
-  <thead>
-    <tr><th>Article</th><th>Description</th><th>Prix</th></tr>
-    <tr id="commande1"><th><img src="images/homme/homme1.jpg" class="w-25" alt=""></th><th>Lunettes homme CasseBonbon</th><th>110,00€</th></tr>
-    <tr id="commande2"><th><img src="images/homme/homme2.jpg" class="w-25" alt=""></th><th>Lunettes homme CasseBonbon</th><th>150,00€</th></tr>
-  </thead>
-  <tbody id="cart-tablebody">
-  </tbody>
-</table>
-
-<p>Sous total : <span class="subtotal"></span>€</p>
-
-<button id="confirm-command">Passer la commande</button>
-</div>
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-  <script src="panier.js"></script>
-
-</body>
-
+  </article>
+  <article class="lunette2019" data-price="200">
+    <div class="card">
+      <div class="card-image">
+        <img src="" alt="">
+        <span>200€00</span>
+      </div>
+      <div class="card-content">
+        <h1>Lunette Femme</h1>
+        <p>Description du produit femme</p>
+        <div class="card-action row">
+          <a href="#" class="waves-effect waves-light btn red white-text col-sm-12">Ajouter au panier</a>
+        </div>
+      </div>
+    </div>
+  </article>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="panier.js"></script>
+  </body>
 </html>

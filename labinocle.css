@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(171, 63, 44);
 }
@@ -22,11 +23,28 @@ margin-bottom: 1.5rem;
 margin-top: 0;
 }
 
+.paypal {
+  width: 9rem;
+}
 
+/****** BLur Effect ******/
+/* h5 {
+  text-align:center;
+
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  transition: all 0.5s;
+}
+h5:hover {
+  color:#444;
+  text-shadow:none;
+} */
+/****** /.BLur Effect ******/
 
 hr {
-  background-color: rgb(171, 63, 44);
+  background-color: rgb(238, 83, 17);
   width: 60px;
+  height: 1px;
 }
 
 li {

@@ -7,6 +7,10 @@
   border-radius: 10%;
 }
 
+.btnPay, .btnModals, .navbar {
+  background-color: rgba(11, 158, 147, 0.75);
+  border:none;
+}
 
 /* CSS du formulaire d'inscription */
 
@@ -145,4 +149,108 @@ border-width: 1px;
 
 .modal-footer {
   padding-top: 0rem;
+}
+
+.modalPayBg {
+  background-image: url('images/fondPay.png');
+  background-size: auto;
+}
+
+ #cart, .totalShopping{
+   background-color: rgba(11, 158, 147, 0.75);
+ }
+
+ .btnCloseShop, .btnPayShop{
+   background-color: white;
+   border: none;
+   color: #00b0c8;
+ }
+
+  .btnCloseShop:hover, .btnPayShop:hover{
+   background-color: white;
+   border: none;
+   color: #0b9e93;
+ }
+
+.shopText{
+  text-align: left;
+  color: #0b9e93;
+  font-weight: bold;
+}
+
+#c1 {
+  background: URL(images/navImg/image4.png) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c2 {
+  background: URL(images/navImg/image1.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c3 {
+  background: URL(images/navImg/image2.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c4 {
+  background: URL(images/navImg/image2.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c5 {
+  background: URL(images/navImg/image2.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c6 {
+  background: URL(images/navImg/image2.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c7 {
+  background: URL(images/navImg/image3.jpg) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c8 {
+  background: URL(images/navImg/image3.png) no-repeat;
+  background-size: 100%;
+  background-position:center;
+    font-family: 'Alice', serif;
+}
+#c9 {
+  background: URL(images/navImg/image4.jpg) no-repeat;
+  background-size: 20% cover;
+  background-position:center;
+}
+
+.paypal {
+  width: 9rem;
+}
+
+/****** BLur Effect ******/
+/* h5 {
+  text-align:center;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  transition: all 0.5s;
+}
+h5:hover {
+  color:#444;
+  text-shadow:none;
+} */
+/****** /.BLur Effect ******/
+
+hr {
+  background-color: rgb(238, 83, 17);
+  width: 60px;
+  height: 1px;
 }

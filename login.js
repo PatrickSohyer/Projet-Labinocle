@@ -12,9 +12,9 @@ $("#login").click(function() {
       text: 'Ou votre adresse e-mail renseignée lors de l\'inscription'
     },
     'Mot de passe',
-    
+
   ]).then((result) => {
-Swal.fire("Ravi de vous revoir parmi nous !");
+    Swal.fire("Ravi de vous revoir parmi nous !");
   })
 });
 

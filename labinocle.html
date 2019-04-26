@@ -3,7 +3,7 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8 /">
+  <meta charset="utf-8 " />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
   <link rel="stylesheet" href="labinocle.css">
+  <link rel="icon" href="images/icons/favicon.ico">
 
   <title>La Binocle!</title>
 
@@ -21,7 +22,7 @@
   <!-- bandeau haut de site -->
 
   <div id="headSite" class="text-center">
-    <img src="bandeaubinocle.jpg" class="img-fluid" id="bandeau" />
+    <img src="bandeaubinocle.jpg" class="img-fluid" id="bandeau">
   </div>
 
   <!-- Début Navbar -->
@@ -56,7 +57,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a id="femme1" class="dropdown-item" href="#">Barbinocle</a>
             <a id="femme2" class="dropdown-item" href="#">Choupitromimi</a>
-            <a id="femme3" class="dropdown-item" href="#">FLowerPing</a>
+            <a id="femme3" class="dropdown-item" href="#">FLowerPink</a>
             <a id="femme4" class="dropdown-item" href="#">Margharita</a>
             <a id="femme5" class="dropdown-item" href="#">MyLittleBinocle</a>
             <a id="femme6" class="dropdown-item" href="#">Toutes nos marques...</a>
@@ -99,28 +100,48 @@
           </li>
         </ul>
       </div>
-
-<div class="dropdown">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart fa-2x text-light"></i></button>
-  <div class="dropdown-menu dropdown-menu-right" >
-          <h4 >Panier</h4>
-        <div id="cart">
-          <ul>
-          </ul>
-        </div>
-        <p class="pay">Total : <span class="total">0.00</span>€</p>
-          <button class="btn btn-default" data-dismiss="modal">Close</button>
-          <button name="button" id="pay">Payer</button>
+      <div>
+        <button type="button" id="btnShop" data-toggle="modal" data-target="#modalPanier" class="bg-dark" name="button"><i class="fas fa-shopping-cart fa-2x text-light"></i></button>
       </div>
+    </div>
   </nav>
-  <!-- Fin navbar -->
 
+  <div id="modalPanier" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="shopText">Panier</h4>
+          <button type="button" class="btnCloseShop" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times fa-2x"></i>
+          </button>
+        </div>
+        <div class="modal-body modalPayBg text-white font-weight-bold">
+          <div class="fondPay">
+            <div id="cart">
+              <ul>
+              </ul>
+            </div>
+            <h4 class="pay totalShopping font-weight-bold ">Total : <span class="total">0.00</span>€</h4>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p class="shopText">Retour</p>
+          <button type="button" class="btnCloseShop" data-dismiss="modal" aria-label="Close"><i class="fas fa-shopping-basket fa-2x"></i></button>
+          <p class="shopText">Payer</p>
+          <button type="button" class="btnPay btnPayShop btn-primary"><i class="fas fa-shopping-cart fa-2x"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fin navbar -->
 
   <div class="container-fluid" id="bodyPage">
     <div class="row">
       <div class="col-lg-12 col-sm-12 col-md-12">
         <div class="binocleLesOpticiens">
-          <img src="Binocleimg1.jpg" class="w-100 img-fluid">
+          <img src="Binocleimg1.jpg" class="w-100 img-fluid mt-3" />
         </div>
       </div>
     </div>
@@ -128,25 +149,25 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 col-sm-3 col-md-3">
+        <div class="col-lg-3 col-sm-12 col-md-3">
           <div class="iconsBinocle text-center">
             <img src="images/icons/iconbinocle.png" id="iconbinocle" class="w-50 img-fluid">
             <p class="h5">Des lunettes de qualité toute l'année!</p>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-3 col-md-3">
+        <div class="col-lg-3 col-sm-12 col-md-3">
           <div class="iconsBinocle text-center">
             <img src="images/icons/iconSAV.png" id="iconSAV" class="w-50 img-fluid">
             <p class="h5">Un SAV disponible le lundi de 10h à 10h15!</p>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-3 col-md-3">
+        <div class="col-lg-3 col-sm-12 col-md-3">
           <div class="iconsBinocle text-center">
             <img src="images/icons/iconlivraison.png" id="iconlivraison" class="w-50 img-fluid">
             <p class="h5">Recevez vos lunettes sous 2 ans avec nos livreurs de qualités!</p>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-3 col-md-3">
+        <div class="col-lg-3 col-sm-12 col-md-3">
           <div class="iconsBinocle text-center">
             <img src="images/icons/iconsatisfait.png" id="iconsatisfait" class="w-50 img-fluid">
             <p class="h5">Satisfait ou rien, on rends pas votre argent!</p>
@@ -175,14 +196,790 @@
         </div>
       </div>
     </div>
+
+    <hr width="90%">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-3 col-md-3 mt-2">
+        </div>
+        <div class="col-lg-6 col-sm-6 col-md-6 mt-2">
+          <div class="pubinocl1 text-center">
+            <img src="images/pubinocle1.jpg" id="pubinocle1" class="w-100 img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr width="90%">
+
+    <!-- Lunettes homme -->
+
+    <h1 class="menTitle text-center m-0"><b><i>Nos meilleurs ventes homme</i></b></h1>
+    <div class="container container-fluid" id="modalsBorder">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="casseBonbonModals mx-auto text-center">
+            <img src="images/homme/homme1.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> CasseBonbon</b></p>
+            <p class="h5 mb-4"><i>110,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#casseBonbonModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="casseBonbonModals" tabindex="-1" role="dialog" aria-labelledby="casseBonbonModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Grâce au lunettes CasseBonbon, vous aurez l'air moins con!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/homme/homme1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                      </td>
+                      <td>Lunettes CasseBonbon</td>
+                      <td>110€</td>
+                      <td>CB001X</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="croconetteModals mx-auto text-center" id="croconetteModalsBorder">
+            <img src="images/homme/homme7.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Croconette</b></p>
+            <p class="h5 mb-4"><i>65,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#croconetteModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="croconetteModals" tabindex="-1" role="dialog" aria-labelledby="croconetteModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Qui va à la chasse perd sa place, mais pas ses lunettes croconette!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/homme/homme7.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes croconette</td>
+                      <td>65€</td>
+                      <td>CC003T</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="damiolyteModals mx-auto text-center" id="damiolyteModalsBorder">
+            <img src="images/homme/homme9.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Damiolyte</b></p>
+            <p class="h5 mb-4"><i>13,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#damiolyteModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="damiolyteModals" tabindex="-1" role="dialog" aria-labelledby="damiolyteModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Avec Damiolyte, finis les maux de têtes.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/homme/homme9.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Damiolyte</td>
+                      <td>13€</td>
+                      <td>DL001N</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="reptilienModals mx-auto text-center" id="reptilienModalsBorder">
+            <img src="images/homme/homme17.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Reptilien</b></p>
+            <p class="h5 mb-4"><i>75,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#reptilienModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="reptilienModals" tabindex="-1" role="dialog" aria-labelledby="reptilienModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Rejoins la grande famille des Reptiliens avec cette superbe paire de lunettes.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/homme/homme17.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Reptilien</td>
+                      <td>75€</td>
+                      <td>RL001Z</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-5">
+          <a href="#" id="modalsMarqueMen" class="text-dark">Voir toutes nos lunettes pour homme...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunettes femme -->
+
+    <h1 class="womenTitle text-center mt-2 m-0"><b><i>Nos meilleurs ventes femme</i></b></h1>
+    <div class="container container-fluid" id="modalsBorder">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="barbinocleModals mx-auto text-center">
+            <img src="images/femme/femme01.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Barbinocle</b></p>
+            <p class="h5 mb-4"><i>235,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#barbinocleModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="barbinocleModals" tabindex="-1" role="dialog" aria-labelledby="barbinocleModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Deviens une vraie princesse avec Barbinocle!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/femme/femme01.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                      </td>
+                      <td>Lunettes Barbinocle</td>
+                      <td>235€</td>
+                      <td>BB001T</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="choupitromimiModals mx-auto text-center" id="choupitromimiModalsBorder">
+            <img src="images/femme/femme5.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Choupitromimi</b></p>
+            <p class="h5 mb-4"><i>35,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#choupitromimiModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="choupitromimiModals" tabindex="-1" role="dialog" aria-labelledby="choupitromimiModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Tu aime les petits chats tout mimi? Alors achète nos lunettes!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/femme/femme5.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Choupitromimi</td>
+                      <td>35€</td>
+                      <td>CM001A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="flowerPinkModals mx-auto text-center" id="flowerPinkModalsBorder">
+            <img src="images/femme/femme10.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> FlowerPink</b></p>
+            <p class="h5 mb-4"><i>40,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#flowerPinkModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="flowerPinkModals" tabindex="-1" role="dialog" aria-labelledby="flowerPinkModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Les fleurs sont aussi belles que nos lunettes.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/femme/femme10.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes FlowerPink</td>
+                      <td>40€</td>
+                      <td>FL002P</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="myLittleBinocleModals mx-auto text-center" id="myLittleBinocleModalsBorder">
+            <img src="images/femme/femme17.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> MyLittleBinocle</b></p>
+            <p class="h5 mb-4"><i>532,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#myLittleBinocleModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="myLittleBinocleModals" tabindex="-1" role="dialog" aria-labelledby="myLittleBinocleModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Pour tout les fans de my little poney, c'est cadeau.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/femme/femme17.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes MyLittleBinocle</td>
+                      <td>532€</td>
+                      <td>MB001B</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-5">
+          <a href="#" id="modalsMarqueWomen" class="text-dark">Voir toutes nos lunettes pour femme...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunettes enfant -->
+
+    <h1 class="kidsTitle text-center mt-2 m-0"><b><i>Nos meilleurs ventes enfant</i></b></h1>
+    <div class="container container-fluid" id="modalsBorder">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="emileLouisVuittonModals mx-auto text-center">
+            <img src="images/enfant/enfant1.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Emile Louis-Vuitton</b></p>
+            <p class="h5 mb-4"><i>600,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#emileLouisVuittonModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="emileLouisVuittonModals" tabindex="-1" role="dialog" aria-labelledby="emileLouisVuittonModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Les montures EmileLouisVuitton sont proposées uniquement dans le cadre de packs "monture + verres" : Le style de cette collection
+                      est riche et varié pour satisfaire tous les goûts, à tout âge.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/enfant/enfant1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                      </td>
+                      <td>Lunettes Emile Louis-Vuitton</td>
+                      <td>600€</td>
+                      <td>EM001L</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="choupitromimiModals mx-auto text-center" id="choupitromimiModalsBorder">
+            <img src="images/enfant/enfant5.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Optic-Bébé</b></p>
+            <p class="h5 mb-4"><i>35,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#choupitromimiModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="choupitromimiModals" tabindex="-1" role="dialog" aria-labelledby="choupitromimiModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Avec les lunettes Optic Bébé, votre bébé va parler à 2 mois!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/enfant/enfant5.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Optic-Bébé</td>
+                      <td>35€</td>
+                      <td>OP001Z</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="miochefflelouModals mx-auto text-center">
+            <img src="images/enfant/enfant9.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Miochefflelou</b></p>
+            <p class="h5 mb-4"><i>155,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#miochefflelouModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="miochefflelouModals" tabindex="-1" role="dialog" aria-labelledby="miochefflelouModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Il est fou miochefflelou il est fouuuu!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/enfant/enfant9.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Miochefflelou</td>
+                      <td>155€</td>
+                      <td>MF001S</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="pleureurModals mx-auto text-center" id="pleureurModalsBorder">
+            <img src="images/enfant/enfant13.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Pleureur 2000</b></p>
+            <p class="h5 mb-4"><i>20,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#pleureurModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="pleureurModals" tabindex="-1" role="dialog" aria-labelledby="pleureurModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Avec les lunettes pleureur 2000, votre enfant ne pleurera plus jamais.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/enfant/enfant13.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Pleureur 2000</td>
+                      <td>20,00€</td>
+                      <td>PL001R</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-5">
+          <a href="#" id="modalsMarqueKids" class="text-dark">Voir toutes nos lunettes pour enfant...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunettes solaire -->
+
+    <h1 class="kidsTitle text-center mt-2 m-0"><b><i>Nos meilleurs ventes solaire</i></b></h1>
+    <div class="container container-fluid" id="modalsBorder">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="CaPikLesYeuxModals mx-auto text-center">
+            <img src="images/solaire/solaire1.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> CaPikLesYeux</b></p>
+            <p class="h5 mb-4"><i>75,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#CaPikLesYeuxModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="CaPikLesYeuxModals" tabindex="-1" role="dialog" aria-labelledby="CaPikLesYeuxModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Les seuls lunettes de soleil qui ne vous protège pas du soleil!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/solaire/solaire1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                      </td>
+                      <td>Lunettes CaPikLesYeux</td>
+                      <td>75€</td>
+                      <td>CY001V</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="Eclypse2000Modals mx-auto text-center">
+            <img src="images/solaire/solaire5.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> Eclypse2000</b></p>
+            <p class="h5 mb-4"><i>300,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#Eclypse2000Modals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="Eclypse2000Modals" tabindex="-1" role="dialog" aria-labelledby="Eclypse2000Modals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Chaque fois que vous porterez nos lunettes, vous aurez l'impressions de voir une Eclypse!</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/solaire/solaire5.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes Eclypse2000</td>
+                      <td>300€</td>
+                      <td>EP001H</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="GigiMontagneModals mx-auto text-center">
+            <img src="images/solaire/solaire9.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> GigiMontagné</b></p>
+            <p class="h5 mb-4"><i>25,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#GigiMontagneModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="GigiMontagneModals" tabindex="-1" role="dialog" aria-labelledby="GigiMontagneModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Gilbert Montagné a déclaré à propos de ces lunettes " On voit vraiment très bien" !</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/solaire/solaire9.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes GigiMontagné</td>
+                      <td>25€</td>
+                      <td>GM001C</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-6 mt-2">
+          <div class="JyVoisQueDalModals mx-auto text-center">
+            <img src="images/solaire/solaire13.jpg" class="w-100 mb-4" />
+            <p class="h3 m-0"><b>Lunettes </br> JyVoisQueDal</b></p>
+            <p class="h5 mb-4"><i>10,00€</i></p>
+            <button type="button" class="btnModals btn-danger" data-toggle="modal" data-target="#JyVoisQueDalModals">Voir le produit</button>
+          </div>
+        </div>
+        <div class="modal fade" id="JyVoisQueDalModals" tabindex="-1" role="dialog" aria-labelledby="JyVoisQueDalModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <p class="h5 modal-title" id="exampleModalLabel"><b>Description du produit :<br></b><span class="h6"><i>Des lunettes de soleil de lune.</i></span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Ref</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img src="images/solaire/solaire13.jpg" class="img-fluid img-thumbnail" />
+                      </td>
+                      <td>Lunettes JyVoisQueDal</td>
+                      <td>10,00€</td>
+                      <td>JD001E</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-5">
+          <a href="#" id="modalsMarqueSun" class="text-dark">Voir toutes nos lunettes Solaire...</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <hr width="90%">
-
-
-
-  <!-- Fin navbar -->
-
+  </div>
 
   <!-- Début du formulaire -->
 
@@ -341,13 +1138,12 @@
 
   </div>
 
+  <!-- Fin du formulaire -->
 
 
   <!-- LUNETTE HOMMES  -->
 
   <!-- Casse Bonbon  -->
-
-
 
   <div class="container-fluid casseBonbon" id="casseBonbon">
     <div class="row">
@@ -356,7 +1152,7 @@
           <article class="casseBonbon1" data-price="110" data-ref="CB001X">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme1.jpg" class="w-75" alt="">
+                <img src="images/homme/homme1.jpg" class="imgShop w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
@@ -369,10 +1165,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque CasseBonbon modèle OHM01007 Noir et branches de couleurs Noir/Noir est OHM01007-Noir-140-55-18- Largeur face 135.
+                      Grâce au lunettes CasseBonbon, vous aurez l'air moins con!
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -383,7 +1179,7 @@
           <article class="casseBonbon2" data-price="150" data-ref="CB002X">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme2.jpg" class="w-75" alt="">
+                <img src="images/homme/homme2.jpg" class="imgShop w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
@@ -396,10 +1192,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample1">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque CasseBonbon modèle OHP1408 Noir et branches de couleurs Noir/Noir est OHP1408-Noir-145-54-17- Largeur face 140.
+                      Avec les verres anti-moche de chez CasseBonbon, finis de voir les thons!
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -410,7 +1206,7 @@
           <article class="casseBonbon3" data-price="130" data-ref="CB003X">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme3.jpg" class="w-75" alt="">
+                <img src="images/homme/homme3.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
@@ -423,10 +1219,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample2">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      CasseBonbon, les lunettes pour les bad-boys.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -437,7 +1233,7 @@
           <article class="casseBonbon4" data-price="125" data-ref="CB004X">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme4.jpg" class="w-75" alt="">
+                <img src="images/homme/homme4.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme CasseBonbon</b></p>
@@ -450,10 +1246,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample3">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Vous aimez les bonbons, choisissez des lunettes CasseBonbon.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -475,7 +1271,7 @@
           <article class="Croconette1" data-price="90" data-ref="CC001T">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme5.jpg" class="w-75" alt="">
+                <img src="images/homme/homme5.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Croconette</b></p>
@@ -488,10 +1284,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample4">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque Tango modèle OHM01007 Noir et branches de couleurs Noir/Noir est OHM01007-Noir-140-55-18- Largeur face 135.
+                      Ne vous cognez plus contre les murs, prenez notre nouvelle monture!
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -502,7 +1298,7 @@
           <article class="Croconette2" data-price="120" data-ref="CC002T">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme6.jpg" class="w-75" alt="">
+                <img src="images/homme/homme6.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Croconette</b></p>
@@ -515,10 +1311,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample5">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque CasseBonbon modèle OHP1408 Noir et branches de couleurs Noir/Noir est OHP1408-Noir-145-54-17- Largeur face 140.
+                      L'essayer c'est l'adopter.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -529,7 +1325,7 @@
           <article class="Croconette3" data-price="65" data-ref="CC003T">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme7.jpg" class="w-75" alt="">
+                <img src="images/homme/homme7.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Croconette</b></p>
@@ -542,10 +1338,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample6">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Qui va à la chasse perd sa place, mais pas ses lunettes croconette.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -556,7 +1352,7 @@
           <article class="Croconette4" data-price="80" data-ref="CC004T">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme8.jpg" class="w-75" alt="">
+                <img src="images/homme/homme8.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Croconette</b></p>
@@ -569,10 +1365,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample7">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Ayez l'air plus chouette avec croconette.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -594,7 +1390,7 @@
           <article class="damiolyte1" data-price="10" data-ref="DL001N">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme9.jpg" class="w-75" alt="">
+                <img src="images/homme/homme9.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Damiolyte</b></p>
@@ -607,10 +1403,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample8">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque Tango modèle OHM01007 Noir et branches de couleurs Noir/Noir est OHM01007-Noir-140-55-18- Largeur face 135.
+                      Si les lentilles vous font péter, portez des lunettes.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -621,7 +1417,7 @@
           <article class="damiolyte2" data-price="13" data-ref="DL002N">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme10.jpg" class="w-75" alt="">
+                <img src="images/homme/homme10.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Damiolyte</b></p>
@@ -634,10 +1430,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample9">
                     <div class="card card-body">
-                      La référence des lunettes de vue homme de forme Rectangulaire de marque CasseBonbon modèle OHP1408 Noir et branches de couleurs Noir/Noir est OHP1408-Noir-145-54-17- Largeur face 140.
+                      Avec Damiolyte, finis les maux de têtes.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -648,7 +1444,7 @@
           <article class="damiolyte3" data-price="16" data-ref="DL003N">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme11.jpg" class="w-75" alt="">
+                <img src="images/homme/homme11.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Damiolyte</b></p>
@@ -661,10 +1457,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample10">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Les lunettes Damiolyte ont déjà guérris un cancer.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -675,7 +1471,7 @@
           <article class="damiolyte4" data-price="18" data-ref="DL004N">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme12.jpg" class="w-75" alt="">
+                <img src="images/homme/homme12.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Damiolyte</b></p>
@@ -688,10 +1484,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample11">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Avec Damiolyte, finis la dyslexie.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -713,7 +1509,7 @@
           <article class="laulauvision1" data-price="75" data-ref="LL001V">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme13.jpg" class="w-75" alt="">
+                <img src="images/homme/homme13.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Laulauvision</b></p>
@@ -729,18 +1525,18 @@
                       La référence des lunettes de vue homme de forme Rectangulaire de marque Tango modèle OHM01007 Noir et branches de couleurs Noir/Noir est OHM01007-Noir-140-55-18- Largeur face 135.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
         </div>
-</div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3">
         <div class="laulauvisionMen2">
           <article class="laulauvision2" data-price="70" data-ref="LL002V">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme14.jpg" class="w-75" alt="">
+                <img src="images/homme/homme14.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Laulauvision</b></p>
@@ -756,7 +1552,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -767,7 +1563,7 @@
           <article class="laulauvision3" data-price="98" data-ref="LL003V">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme15.jpg" class="w-75" alt="">
+                <img src="images/homme/homme15.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Laulauvision</b></p>
@@ -783,7 +1579,7 @@
                       La référence des lunettes de vue homme de forme Rectangulaire de marque Tango modèle OHM01007 Noir et branches de couleurs Noir/Noir est OHM01007-Noir-140-55-18- Largeur face 135.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -794,7 +1590,7 @@
           <article class="laulauvision4" data-price="75" data-ref="LL004V">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme16.jpg" class="w-75" alt="">
+                <img src="images/homme/homme16.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Laulauvision</b></p>
@@ -810,7 +1606,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -832,7 +1628,7 @@
           <article class="reptilien1" data-price="75" data-ref="RL001Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme17.jpg" class="w-75" alt="">
+                <img src="images/homme/homme17.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Reptilien</b></p>
@@ -845,10 +1641,10 @@
                     </a></p>
                   <div class="collapse" id="collapseExample16">
                     <div class="card card-body">
-                      La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
+                      Rejoins la grande famille des Reptiliens avec cette superbe paire de lunettes.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -859,7 +1655,7 @@
           <article class="reptilien2" data-price="70" data-ref="RL002Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme18.jpg" class="w-75" alt="">
+                <img src="images/homme/homme18.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Reptilien</b></p>
@@ -875,7 +1671,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -886,7 +1682,7 @@
           <article class="reptilien3" data-price="98" data-ref="RL003Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme19.jpg" class="w-75" alt="">
+                <img src="images/homme/homme19.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Reptilien</b></p>
@@ -902,7 +1698,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -913,7 +1709,7 @@
           <article class="reptilien4" data-price="75" data-ref="RL004Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/homme/homme20.jpg" class="w-75" alt="">
+                <img src="images/homme/homme20.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes homme </br> Reptilien</b></p>
@@ -929,7 +1725,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -955,7 +1751,7 @@
           <article class="barbinocle1" data-price="235" data-ref="BB001T">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme01.jpg" class="w-75" alt="">
+                <img src="images/femme/femme01.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> barbinocle</b></p>
@@ -971,7 +1767,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -982,7 +1778,7 @@
           <article class="barbinocle2" data-price="350" data-ref="BB002T">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme2.jpg" class="w-75" alt="">
+                <img src="images/femme/femme2.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Barbinocle</b></p>
@@ -998,7 +1794,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1009,7 +1805,7 @@
           <article class="barbinocle3" data-price="400" data-ref="BB003T">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme2.jpg" class="w-75" alt="">
+                <img src="images/femme/femme2.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Barbinocle</b></p>
@@ -1025,7 +1821,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1036,7 +1832,7 @@
           <article class="barbinocle4" data-price="455" data-ref="BB004T">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme2.jpg" class="w-75" alt="">
+                <img src="images/femme/femme2.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Barbinocle</b></p>
@@ -1052,7 +1848,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1074,7 +1870,7 @@
           <article class="choupitromimi1" data-price="35" data-ref="CM001A">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme5.jpg" class="w-75" alt="">
+                <img src="images/femme/femme5.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme Choupitromimi</b></p>
@@ -1090,7 +1886,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1101,7 +1897,7 @@
           <article class="choupitromimi2" data-price="45" data-ref="CM002A">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme6.jpg" class="w-75" alt="">
+                <img src="images/femme/femme6.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme Choupitromimi</b></p>
@@ -1117,7 +1913,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1128,7 +1924,7 @@
           <article class="choupitromimi3" data-price="65" data-ref="CM003A">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme7.jpg" class="w-75" alt="">
+                <img src="images/femme/femme7.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme Choupitromimi</b></p>
@@ -1144,7 +1940,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1155,7 +1951,7 @@
           <article class="choupitromimi4" data-price="50" data-ref="CM004A">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme8.jpg" class="w-75" alt="">
+                <img src="images/femme/femme8.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme Choupitromimi</b></p>
@@ -1171,7 +1967,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1193,7 +1989,7 @@
           <article class="flowerPink1" data-price="39" data-ref="FL001P">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme9.jpg" class="w-75" alt="">
+                <img src="images/femme/femme9.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> FlowerPink</b></p>
@@ -1209,7 +2005,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1220,7 +2016,7 @@
           <article class="flowerPink2" data-price="40" data-ref="FL002P">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme10.jpg" class="w-75" alt="">
+                <img src="images/femme/femme10.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> FlowerPink</b></p>
@@ -1236,7 +2032,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1247,7 +2043,7 @@
           <article class="flowerPink3" data-price="45" data-ref="FL003P">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme11.jpg" class="w-75" alt="">
+                <img src="images/femme/femme11.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> FlowerPink</b></p>
@@ -1263,7 +2059,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1274,7 +2070,7 @@
           <article class="flowerPink4" data-price="55" data-ref="FL004P">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme12.jpg" class="w-75" alt="">
+                <img src="images/femme/femme12.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> FlowerPink</b></p>
@@ -1290,7 +2086,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1312,7 +2108,7 @@
           <article class="margharita1" data-price="95" data-ref="MG001C">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme13.jpg" class="w-75" alt="">
+                <img src="images/femme/femme13.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Margharita</b></p>
@@ -1328,7 +2124,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1339,7 +2135,7 @@
           <article class="margharita2" data-price="58" data-ref="MG002C">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme14.jpg" class="w-75" alt="">
+                <img src="images/femme/femme14.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Margharita</b></p>
@@ -1355,7 +2151,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1366,7 +2162,7 @@
           <article class="margharita3" data-price="65" data-ref="MG003C">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme15.jpg" class="w-75" alt="">
+                <img src="images/femme/femme15.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Margharita</b></p>
@@ -1382,7 +2178,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1393,7 +2189,7 @@
           <article class="margharita4" data-price="75" data-ref="MG004C">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme16.jpg" class="w-75" alt="">
+                <img src="images/femme/femme16.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme </br> Margharita</b></p>
@@ -1409,7 +2205,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1431,7 +2227,7 @@
           <article class="myLittleBinocle1" data-price="532" data-ref="MB001B">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme17.jpg" class="w-75" alt="">
+                <img src="images/femme/femme17.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme myLittleBinocle</b></p>
@@ -1447,7 +2243,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1458,7 +2254,7 @@
           <article class="myLittleBinocle2" data-price="254" data-ref="MB002B">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme18.jpg" class="w-75" alt="">
+                <img src="images/femme/femme18.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme MyLittleBinocle</b></p>
@@ -1468,13 +2264,13 @@
                   <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample37" role="button" aria-expanded="false" aria-controls="collapseExample">
                       Description
-</a></p>
-                 <div class="collapse" id="collapseExample37">
+                    </a></p>
+                  <div class="collapse" id="collapseExample37">
                     <div class="card card-body">
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1485,7 +2281,7 @@
           <article class="myLittleBinocle3" data-price="430" data-ref="MB003B">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme19.jpg" class="w-75" alt="">
+                <img src="images/femme/femme19.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme MyLittleBinocle</b></p>
@@ -1501,7 +2297,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1512,7 +2308,7 @@
           <article class="myLittleBinocle4" data-price="340" data-ref="MB004B">
             <div class="card">
               <div class="card-image">
-                <img src="images/femme/femme20.jpg" class="w-75" alt="">
+                <img src="images/femme/femme20.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes femme MyLittleBinocle</b></p>
@@ -1528,7 +2324,7 @@
                       La référence des lunettes de vue mixte de forme Carré de marque Esprit modèle ET17444 Rouge et branches de couleurs Violet/Violet est ET17444-517-145-52-17- Largeur face 130.
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1554,7 +2350,7 @@
           <article class="emileLouisVuitton1" data-price="600" data-ref="EM001L">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant1.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant1.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant EmileLouisVuitton</b></p>
@@ -1571,7 +2367,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1582,7 +2378,7 @@
           <article class="emileLouisVuitton2" data-price="575" data-ref="EM002L">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant2.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant2.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant EmileLouisVuitton</b></p>
@@ -1599,7 +2395,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1610,7 +2406,7 @@
           <article class="emileLouisVuitton3" data-price="690" data-ref="EM003L">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant3.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant3.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant EmileLouisVuitton</b></p>
@@ -1626,7 +2422,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1637,7 +2433,7 @@
           <article class="emileLouisVuitton4" data-price="380" data-ref="EM004L">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant4.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant4.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant EmileLouisVuitton</b></p>
@@ -1654,7 +2450,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1676,7 +2472,7 @@
           <article class="opticBebe1" data-price="35" data-ref="OP001Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant5.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant5.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Optic-Bébé</b></p>
@@ -1692,7 +2488,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1703,7 +2499,7 @@
           <article class="opticBebe2" data-price="45" data-ref="OP002Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant6.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant6.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Optic-Bébé</b></p>
@@ -1719,7 +2515,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1730,7 +2526,7 @@
           <article class="opticBebe3" data-price="55" data-ref="OP003Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant7.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant7.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Optic-Bébé</b></p>
@@ -1746,7 +2542,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1757,7 +2553,7 @@
           <article class="opticBebe4" data-price="70" data-ref="OP004Z">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant8.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant8.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Optic-Bébé</b></p>
@@ -1773,7 +2569,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1795,7 +2591,7 @@
           <article class="miochefflelou1" data-price="155" data-ref="MF001S">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant9.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant9.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Miochefflelou</b></p>
@@ -1811,7 +2607,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1822,7 +2618,7 @@
           <article class="miochefflelou2" data-price="105" data-ref="MF002S">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant10.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant10.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Miochefflelou</b></p>
@@ -1838,7 +2634,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1849,7 +2645,7 @@
           <article class="miochefflelou3" data-price="140" data-ref="MF003S">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant11.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant11.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Miochefflelou</b></p>
@@ -1865,7 +2661,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1876,7 +2672,7 @@
           <article class="miochefflelou4" data-price="115" data-ref="MF004S">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant12.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant12.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Miochefflelou</b></p>
@@ -1892,7 +2688,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1914,7 +2710,7 @@
           <article class="petitCornichon1" data-price="34" data-ref="PT001M">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant13.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant13.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant Petit Cornichon</b></p>
@@ -1930,7 +2726,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1941,7 +2737,7 @@
           <article class="petitCornichon2" data-price="43" data-ref="PT002M">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant14.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant14.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant Petit Cornichon</b></p>
@@ -1957,18 +2753,18 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
         </div>
-</div>
-     <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-2">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-2">
         <div class="petitCornichonkids3">
           <article class="petitCornichon3" data-price="10" data-ref="PT003M">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant15.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant15.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant Petit Cornichon</b></p>
@@ -1984,7 +2780,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -1995,7 +2791,7 @@
           <article class="petitCornichon4" data-price="25" data-ref="PT004M">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant16.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant16.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant Petit Cornichon</b></p>
@@ -2011,7 +2807,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2033,7 +2829,7 @@
           <article class="pleureur1" data-price="20" data-ref="PL001R">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant17.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant17.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Pleureur 2000</b></p>
@@ -2045,11 +2841,11 @@
                   </a></p>
                 <div class="collapse" id="collapsepleureur1">
                   <div class="card card-body">
-                    Flemme de mettre une Description, on s'en fou c'est des lunettes!
+                    Avec les lunettes pleureur 2000, votre enfant ne pleurera plus jamais.
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2060,7 +2856,7 @@
           <article class="pleureur2" data-price="27" data-ref="PL002R">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant18.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant18.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Pleureur 2000</b></p>
@@ -2076,7 +2872,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2087,7 +2883,7 @@
           <article class="pleureur3" data-price="30" data-ref="PL003R">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant19.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant19.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Pleureur 2000</b></p>
@@ -2103,7 +2899,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2114,7 +2910,7 @@
           <article class="pleureur4" data-price="43" data-ref="PL004R">
             <div class="card">
               <div class="card-image">
-                <img src="images/enfant/enfant20.jpg" class="w-75" alt="">
+                <img src="images/enfant/enfant20.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes enfant </br> Pleureur 2000</b></p>
@@ -2130,7 +2926,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2156,7 +2952,7 @@
           <article class="CaPikLesYeux1" data-price="75" data-ref="CY001V">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire1.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire1.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> CaPikLesYeux</b></p>
@@ -2168,11 +2964,11 @@
                   </a></p>
                 <div class="collapse" id="collapsecaPikLesYeux1">
                   <div class="card card-body">
-                    Flemme de mettre une Description, on s'en fou c'est des lunettes!
+                    Les seuls lunettes de soleil qui ne vous protège pas du soleil!
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2183,7 +2979,7 @@
           <article class="CaPikLesYeux2" data-price="55" data-ref="CY002V">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire2.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire2.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> CaPikLesYeux</b></p>
@@ -2199,7 +2995,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2210,7 +3006,7 @@
           <article class="CaPikLesYeux3" data-price="50" data-ref="CY003V">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire3.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire3.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> CaPikLesYeux</b></p>
@@ -2226,7 +3022,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2237,7 +3033,7 @@
           <article class="CaPikLesYeux4" data-price="60" data-ref="CY004V">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire4.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire4.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> CaPikLesYeux</b></p>
@@ -2253,7 +3049,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2275,7 +3071,7 @@
           <article class="eclypse1" data-price="300" data-ref="EP001H">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire5.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire5.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Eclypse2000</b></p>
@@ -2287,11 +3083,11 @@
                   </a></p>
                 <div class="collapse" id="collapseEclypse1">
                   <div class="card card-body">
-                    Flemme de mettre une Description, on s'en fou c'est des lunettes!
+                    Chaque fois que vous porterez nos lunettes, vous aurez l'impressions de voir une Eclypse!
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2302,7 +3098,7 @@
           <article class="eclypse2" data-price="235" data-ref="EP002H">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire6.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire6.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Eclypse2000</b></p>
@@ -2318,7 +3114,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2329,7 +3125,7 @@
           <article class="eclypse3" data-price="255" data-ref="EP003H">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire7.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire7.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Eclypse2000</b></p>
@@ -2345,7 +3141,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2356,7 +3152,7 @@
           <article class="eclypse4" data-price="360" data-ref="EP004H">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire8.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire8.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Eclypse2000</b></p>
@@ -2372,7 +3168,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2394,7 +3190,7 @@
           <article class="gigiMontagne1" data-price="25" data-ref="GM001C">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire9.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire9.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> GigiMontagné</b></p>
@@ -2406,11 +3202,11 @@
                   </a></p>
                 <div class="collapse" id="collapseGigiMontagne1">
                   <div class="card card-body">
-                    Flemme de mettre une Description, on s'en fou c'est des lunettes!
+                    Gilbert Montagné a déclaré à propos de ces lunettes " On voit vraiment très bien" !
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2421,7 +3217,7 @@
           <article class="gigiMontagne2" data-price="35" data-ref="GM002C">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire10.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire10.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> GigiMontagné</b></p>
@@ -2437,7 +3233,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2448,7 +3244,7 @@
           <article class="gigiMontagne3" data-price="15" data-ref="GM003C">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire11.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire11.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> GigiMontagné</b></p>
@@ -2464,7 +3260,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2475,7 +3271,7 @@
           <article class="gigiMontagne4" data-price="30" data-ref="GM004C">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire12.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire12.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> GigiMontagné</b></p>
@@ -2491,7 +3287,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2513,7 +3309,7 @@
           <article class="JyVoisQueDal1" data-price="10" data-ref="JD001E">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire13.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire13.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> JyVoisQueDal</b></p>
@@ -2525,11 +3321,11 @@
                   </a></p>
                 <div class="collapse" id="collapseJyVoisQueDal1">
                   <div class="card card-body">
-                    Flemme de mettre une Description, on s'en fou c'est des lunettes!
+                    Des lunettes de soleil de lune.
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2540,7 +3336,7 @@
           <article class="JyVoisQueDal2" data-price="25" data-ref="JD002E">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire14.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire14.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> JyVoisQueDal</b></p>
@@ -2556,7 +3352,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2567,7 +3363,7 @@
           <article class="JyVoisQueDal3" data-price="45" data-ref="JD003E">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire15.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire15.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> JyVoisQueDal</b></p>
@@ -2583,7 +3379,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2594,7 +3390,7 @@
           <article class="JyVoisQueDal4" data-price="30" data-ref="JD004E">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire16.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire16.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> JyVoisQueDal</b></p>
@@ -2610,7 +3406,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2632,7 +3428,7 @@
           <article class="louisZieuton1" data-price="250" data-ref="LZ001K">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire17.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire17.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Louis Zieuton</b></p>
@@ -2648,7 +3444,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2659,7 +3455,7 @@
           <article class="louisZieuton2" data-price="500" data-ref="LZ002K">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire18.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire18.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Louis Zieuton</b></p>
@@ -2675,7 +3471,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2702,7 +3498,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2713,7 +3509,7 @@
           <article class="louisZieuton4" data-price="475" data-ref="LZ004K">
             <div class="card">
               <div class="card-image">
-                <img src="images/solaire/solaire20.jpg" class="w-75" alt="">
+                <img src="images/solaire/solaire20.jpg" class="w-75" />
               </div>
               <div class="card-content">
                 <p class="h5 m-0"><b>Lunettes solaire </br> Louis Zieuton</b></p>
@@ -2729,7 +3525,7 @@
                   </div>
                 </div>
                 <div class="text-center mt-2">
-                  <button type="button" class="btn btn-secondary mx-auto mb-2">Ajoutez au panier</button>
+                  <button type="button" class="btnPay btn-secondary mx-auto mb-2">Ajoutez au panier</button>
                 </div>
               </div>
           </article>
@@ -2742,6 +3538,70 @@
   </div>
   </div>
 
+  <!-- Footer -->
+  <footer class="main-footer">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+      <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="footer-title mt-4">La maison des Binoclards!</h6>
+          <hr class="footerHR mb-4 mt-0 d-inline-block mx-auto" />
+
+          <!--Google Map-->
+          <div class="map-responsive">
+            <iframe id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5183.934730024876!2d0.13303062432862287!3d49.48512345954904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02e55ac33c39f%3A0xe81b194f62c72500!2s1+Rue+de+Dombasle%2C+76600+Le+Havre!5e0!3m2!1sfr!2sfr!4v1556110272746!5m2!1sfr!2sfr"
+              width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--/.Google Map-->
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="footer-title mt-4">Mentions Légales</h6>
+          <hr class="footerHR mb-4 mt-0 d-inline-block mx-auto" />
+          <li class="footer-legis"><a class="footerText" href="#!">Conditions Générales de Vente</a></li>
+          <li class="footer-legis"><a class="footerText" href="#!">Politique de Rétractation</a></li>
+          <li class="footer-legis"><a class="footerText" href="#!">Politique de Livraison</a></li>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="footer-title mt-4">Législation</h6>
+          <hr class="footerHR mb-4 mt-0 d-inline-block mx-auto" />
+          <li class="footer-legis"><a class="footerText" href="#!">Mentions Légales</a></li>
+          <li class="footer-legis"><a class="footerText" href="#!">Politique de Confidentialité</a></li>
+          <li class="footer-legis"><a class="footerText" href="#!">Déclarer un effet indésirable</a></li>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="footer-title mt-4">Autres Informations</h6>
+          <hr class="footerHR mb-4 mt-0 d-inline-block mx-auto" />
+          <p><i class="fas fa-home  mr-3"></i> 1 rue Dombasle, Le Havre</p>
+          <p><i class="fas fa-envelope mr-3"></i> binoclard@labinocle.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 33 76 78 88</p>
+          <p><i class="fas fa-print mr-3"></i> + 33 76 79 89</p>
+        </div>
+        <!--/.Fourth column-->
+      </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright : Patrick / Laura / Paul / Dorian
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!--/.Footer-->
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -2750,8 +3610,6 @@
   <script src="login.js"></script>
   <script src="labinocle.js"></script>
   <script src="panier.js"></script>
-
-  </script>
 </body>
 
 </html>
